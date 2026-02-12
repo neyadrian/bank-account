@@ -9,7 +9,17 @@ public class Account {
         this.holderName = holderName;
     }
 
-    public double deposit() {
+    public void deposit(double value) {
+        if (value > 0.0) {
+            currentBalance = currentBalance + value;
+        } else {
+            System.out.println("Invalid value.");
+        }
+    }
 
+    public void withdraw(double value) {
+        if (value > 0.0 && value <= currentBalance) {
+            currentBalance = currentBalance - value - 5.0;
+        }
     }
 }
