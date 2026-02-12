@@ -20,6 +20,8 @@ public class Account {
     public void withdraw(double value) {
         if (value > 0.0 && value <= currentBalance) {
             currentBalance = currentBalance - value - 5.0;
+        } else {
+            System.out.println("Insufficient funds or invalid amount.");
         }
     }
 }
