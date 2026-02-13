@@ -19,7 +19,8 @@ public class Main {
         if (op == 'y') {
             System.out.println("Enter initial deposit value: ");
         }
-
+]
+        double Teste;
         sc.close();
     }
 }
