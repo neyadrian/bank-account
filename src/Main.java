@@ -18,9 +18,11 @@ public class Main {
 
         if (op == 'y') {
             System.out.println("Enter initial deposit value: ");
+            double value = sc.nextDouble();
+            account.deposit(value);
         }
-]
-        double Teste;
+
+
         sc.close();
     }
 }
