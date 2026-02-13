@@ -24,4 +24,12 @@ public class Account {
             System.out.println("Insufficient funds or invalid amount.");
         }
     }
+
+    public String toString() {
+        return "Account{" +
+                "accountNumber=" + accountNumber +
+                ", holderName='" + holderName + '\'' +
+                ", currentBalance=" + currentBalance +
+                '}';
+    }
 }
