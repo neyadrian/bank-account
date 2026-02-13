@@ -25,17 +25,22 @@ public class Main {
             account.deposit(value);
         }
 
-        System.out.println("Accont data:");
+        System.out.println("\nAccont data:");
         System.out.println(account);
 
         System.out.print("Enter a deposit value: ");
         value = sc.nextDouble();
         account.deposit(value);
 
-        System.out.println("Update data:");
+        System.out.println("\nUpdate data:");
         System.out.println(account);
 
+        System.out.print("Enter a withdraw value: ");
+        value = sc.nextDouble();
+        account.withdraw(value);
 
+        System.out.println("\nUpdate data:");
+        System.out.println(account);
 
         sc.close();
     }
