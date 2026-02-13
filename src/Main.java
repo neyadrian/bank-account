@@ -11,6 +11,7 @@ public class Main {
 
         System.out.print("Enter account number: ");
         int accountNumber = sc.nextInt();
+        sc.nextLine();
         System.out.print("Enter account holder: ");
         String holderName = sc.nextLine();
         System.out.print("Is there na inital deposit (y/n)? ");
@@ -19,10 +20,13 @@ public class Main {
         Account account = new Account(accountNumber, holderName);
 
         if (op == 'y') {
-            System.out.println("Enter initial deposit value: ");
+            System.out.print("Enter initial deposit value: ");
             value = sc.nextDouble();
             account.deposit(value);
         }
+
+        System.out.println("Accont data:");
+        System.out.println(account);
 
         System.out.print("Enter a deposit value: ");
         value = sc.nextDouble();
