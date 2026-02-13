@@ -26,8 +26,7 @@ public class Account {
     }
 
     public String toString() {
-        return "Account data: " +
-                "Account " + accountNumber +
+        return  "Account " + accountNumber +
                 ", Holder: " + holderName +
                 ", Balance: " + currentBalance + "\n";
     }

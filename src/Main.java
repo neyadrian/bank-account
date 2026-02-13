@@ -7,6 +7,8 @@ public class Main {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
+        double value;
+
         System.out.print("Enter account number: ");
         int accountNumber = sc.nextInt();
         System.out.print("Enter account holder: ");
@@ -18,9 +20,13 @@ public class Main {
 
         if (op == 'y') {
             System.out.println("Enter initial deposit value: ");
-            double value = sc.nextDouble();
+            value = sc.nextDouble();
             account.deposit(value);
         }
+
+        System.out.print("Enter a deposit value: ");
+        value = sc.nextDouble();
+
 
 
         sc.close();
