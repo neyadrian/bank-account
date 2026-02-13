@@ -30,6 +30,10 @@ public class Main {
 
         System.out.print("Enter a deposit value: ");
         value = sc.nextDouble();
+        account.deposit(value);
+
+        System.out.println("Update data:");
+        System.out.println(account);
 
 
 
