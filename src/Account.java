@@ -26,10 +26,9 @@ public class Account {
     }
 
     public String toString() {
-        return "Account{" +
-                "accountNumber=" + accountNumber +
-                ", holderName='" + holderName + '\'' +
-                ", currentBalance=" + currentBalance +
-                '}';
+        return "Account data: " +
+                "Account " + accountNumber +
+                ", Holder: " + holderName +
+                ", Balance: " + currentBalance + "\n";
     }
 }
